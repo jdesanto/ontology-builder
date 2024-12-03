@@ -1,0 +1,4 @@
+name = "Shadow"
+type = "Cat"
+
+siblings = ["Lucy"]

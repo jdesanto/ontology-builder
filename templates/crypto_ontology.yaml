@@ -1,0 +1,24 @@
+name: Crypto Ontology
+ontology: CryptoOntology
+class_definition: ./ontology/crypto_ontology.py
+namespace: http://aevea.com/ontologies/crypto#
+source_directory: /tmp/ecosystems
+file_extension: .toml
+output_file: ./output/crypto.ttl
+classes:
+  - Organizations
+  - Repositories
+  - Ecosystems
+predicates:
+  - has_title: OWL.DatatypeProperty
+  - sub_ecosystem_of: OWL.ObjectProperty
+  - filename: OWL.DatatypeProperty
+  - has_organization: OWL.ObjectProperty
+  - has_repository: OWL.ObjectProperty
+  - has_url: OWL.DatatypeProperty
+entity_name_field: title
+handlers:
+  - title
+  - sub_ecosystems
+  - github_organizations
+#  - repo (skipped to reduce file size)

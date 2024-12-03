@@ -1,0 +1,19 @@
+name: Pet Ontology
+ontology: PetOntology
+class_definition: ./ontology/pet_ontology.py
+namespace: http://aevea.com/ontologies/pets#
+source_directory: ./samples/pets
+file_extension: .toml
+output_file: ./output/pets.ttl
+classes:
+  - Human
+  - Cat
+predicates:
+  - caregiver_for: OWL.ObjectProperty
+  - has_sibling: OWL.ObjectProperty
+  - name: OWL.DatatypeProperty
+entity_name_field: name
+handlers:
+  - name
+  - siblings
+  - caregiver_for

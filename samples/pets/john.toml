@@ -1,0 +1,4 @@
+name = "John"
+type = "Human"
+
+caregiver_for = ["Shadow", "Lucy"]

@@ -1,0 +1,27 @@
+@prefix ns: <http://aevea.com/ontologies/pets#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns:Cat a rdfs:Class .
+
+ns:Human a rdfs:Class .
+
+ns:John a ns:Human ;
+    ns:caregiver_for ns:Lucy,
+        ns:Shadow ;
+    ns:name "John" .
+
+ns:caregiver_for a owl:ObjectProperty .
+
+ns:has_sibling a owl:ObjectProperty .
+
+ns:name a owl:DatatypeProperty .
+
+ns:Lucy a ns:Cat ;
+    ns:has_sibling ns:Shadow ;
+    ns:name "Lucy" .
+
+ns:Shadow a ns:Cat ;
+    ns:has_sibling ns:Lucy ;
+    ns:name "Shadow" .
+
