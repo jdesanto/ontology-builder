@@ -16,7 +16,7 @@ To run
 ```
 pip install -e requirements.txt
 
-python ontology_builder.py --m templates/simple_pet_ontology.yaml
+python ontology_builder.py -m templates/simple_pet_ontology.yaml
 ```
 
 The output is a file as listed in the metadata. It can be imported by [Protégé](https://protege.stanford.edu)
