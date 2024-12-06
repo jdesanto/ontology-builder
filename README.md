@@ -1,6 +1,8 @@
 # Ontology Builder
 
-Ontology Builder is a low-code library to build ontologies from source data holding explicit semantic relationships. Once exported to a standard semantic web format, it is easier to view and manipluate semantic content than in the original .toml, .json, or spreadsheet.
+Ontology Builder is a low-code library to build ontologies from source data holding explicit semantic relationships. 
+Once exported to a standard semantic web format, it is easier to view and manipulate semantic content than in the 
+original .toml, .json, or spreadsheet.
 
 ## Quick Start
 
@@ -21,9 +23,10 @@ python ontology_builder.py -m templates/simple_pet_ontology.yaml
 
 The output is a file as listed in the metadata. It can be imported by [Protégé](https://protege.stanford.edu)
 
-## Prequisites
+## Prerequisites
 
-There are two components, a metadata file describing the ontology and an ontology class where the semantic relations are converted to RDF triples
+There are two components, a metadata file describing the ontology and an ontology class where the semantic relations are 
+converted to RDF triples
 
 ### Metadata
 
