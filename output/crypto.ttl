@@ -11,6 +11,13 @@
     dc:source <https://github.com/electric-capital/crypto-ecosystems> ;
     dc:creator "John DeSanto" .
 
+<http://aevea.com/ontologies/crypto#>
+    a owl:Ontology ;
+    dc:title "Crypto Ontology" ;
+    dc:description "An OWL/RDFS model of a Electric Capital's crypto ecosystems." ;
+    dc:source <https://github.com/electric-capital/crypto-ecosystems> ;
+    dc:creator "John DeSanto" .
+
 ns:Ecosystems a rdfs:Class .
 
 ns:Organizations a rdfs:Class .
